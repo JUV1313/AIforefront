@@ -451,11 +451,10 @@ body{
     <div class="hero">
       <div class="container hero-grid">
         <div class="hero-card">
-          <div class="kicker">עדכונים פרקטיים, פעם בחודש, בלי רעש מיותר</div>
+          <div class="kicker">עדכונים פרקטיים, פעם בחודש</div>
           <h1>מרכז הקישורים של הוובינר החודשי</h1>
           <p class="sub">
-            כאן תמצא במקום אחד, קישור הרשמה למפגש הבא, קישור לזום כשהוא עולה, וספריית הקלטות של מפגשים קודמים,
-            כולל ה-Flow של הנושאים שכבר עברנו.
+            כאן תמצאו במקום אחד, את כל הקישורים החשובים.
           </p>
 
           <div class="cta-row">
@@ -495,7 +494,7 @@ body{
               <a class="btn" id="nextRegister" href="#" target="_blank" rel="noopener">הרשמה</a>
             </div>
             <p style="margin-top:10px;color:var(--muted);font-size:13px;line-height:1.45;">
-              טיפ קטן: אם עדיין אין קישור לזום, שים כאן placeholder, ותעדכן כשיש. העיצוב לא יישבר.
+             https://us02web.zoom.us/j/87352068212?pwd=etfykoNbguOs2HL6VFyJ5LTgTeDh1j.1
             </p>
           </div>
 
@@ -538,27 +537,6 @@ body{
         </div>
       </div>
     </section>
-
-    <!-- HOW TO UPDATE -->
-    <section id="how">
-      <div class="container">
-        <div class="section-title">
-          <h2>איך מעדכנים את האתר</h2>
-          <div class="hint">פותחים את הקובץ, משנים את הנתונים למטה, וזהו.</div>
-        </div>
-
-        <div class="panel">
-          <p style="margin:0;color:var(--muted);line-height:1.6;">
-            בתוך ה-JavaScript יש שני חלקים: <b>nextMeeting</b> למפגש הקרוב, ו-<b>sessions</b> למפגשים קודמים.
-            כל מפגש הוא אובייקט עם תאריך, כותרת, תיאור, תגיות וקישורים.
-          </p>
-          <div class="divider"></div>
-          <p style="margin:0;color:var(--muted);line-height:1.6;">
-            כשתוסיף מפגש חדש, רק תוסיף אותו בראש הרשימה, והסטטיסטיקות וה-Flow יתעדכנו לבד.
-          </p>
-        </div>
-      </div>
-    </section>
   </main>
 
   <footer>
@@ -575,8 +553,8 @@ body{
       date: "2026-03-17",   // YYYY-MM-DD
       time: "09:00",
       description: "מפגש עדכון פרקטי עם דגש על כלים שימושיים לעבודה של מדריכים וצוות.",
-      registerUrl: "https://example.com/register",
-      joinUrl: "https://example.com/zoom"
+      registerUrl: "https://docs.google.com/forms/d/e/1FAIpQLSdMvIv5XzZCnheabqoanAr7n7fJ4ZICd5E_H-HKNV7xcY7-rg/viewform",
+      joinUrl: "https://us02web.zoom.us/j/87352068212?pwd=etfykoNbguOs2HL6VFyJ5LTgTeDh1j.1"
     };
 
     // ========= 2) עדכן כאן: ספריית מפגשים קודמים =========
@@ -584,28 +562,19 @@ body{
     const sessions = [
       {
         date: "2026-02-17",
-        title: "Gemini: מה חדש ומה באמת שימושי",
-        description: "סקירה ממוקדת של יכולות חדשות, תרגול כתיבת פרומפטים, ודוגמאות לעבודה עם חומרים להדרכה.",
-        tags: ["Gemini", "פרומפטינג", "כלים"],
-        recordingUrl: "https://example.com/recording-2026-02",
+        title: "יצירה ועריכה של תמונות בבינה מלאכותית",
+        description: "השוואה בין מחוללי התמונות של כלי הבינה המלאכותית.",
+        tags: ["Gemini", "תמונות", "כלים"],
+        recordingUrl: "https://drive.google.com/file/d/1qxdjr29FEKAJrClpsSHRG0SlloVVEtJE/view?usp=drive_link",
         resourcesUrl: "https://example.com/resources-2026-02"
       },
       {
-        date: "2026-01-21",
-        title: "AI בחזית: סט כלים לצוות מדריכים",
-        description: "איך בונים תהליך עבודה: רעיון, תוצר, בדיקת איכות, התאמה לקהל, ואוטומציות קטנות שחוסכות זמן.",
+        date: "2026-01-13",
+        title: "Gemini: מה חדש ומה באמת שימושי",
+        description: "סקירה ממוקדת של החידושים ב ChatGPT ו Gemini, כמו גם הצצה על Notebook LM.",
         tags: ["תהליכי עבודה", "אוטומציה", "מדריכים"],
-        recordingUrl: "https://example.com/recording-2026-01",
+        recordingUrl: "https://drive.google.com/file/d/1R9-HeCsOcOKkthz4bRjRR1_YARRPYF4W/view?usp=drive_link",
         resourcesUrl: ""
-      },
-      {
-        date: "2025-12-17",
-        title: "NotebookLM, Perplexity ועוד: מחקר מהיר בלי ללכת לאיבוד",
-        description: "איך להפוך מסמכים לבנק ידע ולחלץ תשובות עם מקורות, ומה לא לעשות כדי לא להזין זבל.",
-        tags: ["מחקר", "NotebookLM", "Perplexity"],
-        recordingUrl: "https://example.com/recording-2025-12",
-        resourcesUrl: "https://example.com/resources-2025-12"
-      }
     ];
 
     // ========= Utils =========
