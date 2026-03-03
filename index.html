@@ -11,6 +11,37 @@
   <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <style>
+    /* About section */
+section{
+  scroll-margin-top: 90px; /* כדי שהכותרת לא תסתתר מתחת לתפריט הדביק */
+}
+
+.about-panel{
+  padding: 20px;
+}
+
+.about-text{
+  margin: 0 0 12px;
+  color: var(--muted);
+  line-height: 1.65;
+  font-size: 16px;
+}
+
+.about-list{
+  margin: 0 0 14px;
+  padding: 0 18px 0 0; /* RTL */
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.about-list li{
+  margin: 6px 0;
+}
+
+.about-actions{
+  margin-top: 6px;
+}
+
     :root{
   --bg: #05061A;              
   --panel: rgba(255,255,255,0.06);
@@ -453,6 +484,7 @@ body{
       </div>
 
       <nav class="nav-links">
+        <a class="btn ghost" href="#about">אודות</a>
         <a class="btn ghost" href="#next">הפגישה הקרובה</a>
         <a class="btn ghost" href="#library">הקלטות קודמות</a>
         <a class="btn primary" id="navRegister" href="#" target="_blank" rel="noopener">להרשמה</a>
@@ -516,6 +548,39 @@ body{
     </div>
 
     <!-- LIBRARY / FLOW -->
+    <!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="section-title">
+      <h2>אודות מחשבה טובה</h2>
+      <div class="hint">תקציר קצר, עם קישור למקור הרשמי</div>
+    </div>
+
+    <div class="panel about-panel">
+      <p class="about-text">
+        מחשבה טובה היא עמותה שהוקמה בשנת 2003 על ידי אנשי חינוך והייטק, במטרה לצמצם פערים חברתיים באמצעות הנגשת טכנולוגיה והעצמה אישית.
+        העמותה פועלת בפריפריה החברתית והגאוגרפית בישראל, ומקדמת מוביליות חברתית בקרב אוכלוסיות מודרות, כולל ילדים ונוער במצבי סיכון,
+        אנשים עם מוגבלות, דורשי תעסוקה ובני הגיל השלישי. לצורך כך היא מפעילה מרכזים טכנולוגיים קהילתיים וכיתת מחשבים ניידת,
+        עם הכשרות מותאמות ובליווי אישי.
+      </p>
+
+      <ul class="about-list">
+        <li>הוקמה ב-2003, כדי לחבר אוכלוסיות להזדמנויות שטכנולוגיה מאפשרת</li>
+        <li>פועלת בפריפריה החברתית והגאוגרפית, עם דגש על מוביליות חברתית</li>
+        <li>מרכזים טכנולוגיים קהילתיים, לצד כיתת מחשבים ניידת</li>
+      </ul>
+
+      <div class="row about-actions">
+        <a class="btn" href="https://mtova.org.il/%D7%90%D7%95%D7%93%D7%95%D7%AA/" target="_blank" rel="noopener">
+          לקריאה באתר הרשמי
+        </a>
+        <a class="btn ghost" href="https://mtova.org.il/" target="_blank" rel="noopener">
+          לאתר הראשי
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
     <section id="library">
       <div class="container">
         <div class="section-title">
